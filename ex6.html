@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>questão-6</title>
+    <style>
+        body{
+            background-color: rgb(150, 187, 211);
+        }
+    </style>
+</head>
+
+<body>  
+    <form>
+        <input id="v0" type="number" placeholder="1° número">
+        <input id="v1" type="number" placeholder="2° número">
+        <input id="v2" type="number" placeholder="3° número">
+        <input id="v3" type="number" placeholder="4° número">
+        <input id="v4" type="number" placeholder="5° número">
+        <input id="v5" type="number" placeholder="6° número">
+        <input id="v6" type="number" placeholder="7° número">
+        <input id="v7" type="number" placeholder="8° número">
+        <input id="v8" type="number" placeholder="9° número">
+        <input id="v9" type="number" placeholder="10° número">
+        <button onclick="enviar()">Enviar</button>
+    </form>
+
+   <script type="text/javascript">
+    function enviar(){
+        var v0 = document.getElementById("v0").value;
+        var v1 = document.getElementById("v1").value;
+        var v2 = document.getElementById("v2").value;
+        var v3 = document.getElementById("v3").value;
+        var v4 = document.getElementById("v4").value;
+        var v5 = document.getElementById("v5").value;
+        var v6 = document.getElementById("v6").value;
+        var v7 = document.getElementById("v7").value;
+        var v8 = document.getElementById("v8").value;
+        var v9 = document.getElementById("v9").value;
+        var lista =[v0 + "," + v1 + "," + v2 + "," + v3 + "," + v4 + "," + v5 + "," + v6 + "," + v7 + "," + v8 +  "," + v9]
+        var neg = 0
+        var pos = 0
+        var i = 0
+        var p = 0
+
+        if(lista == v0, v1, v2, v3, v4, v5, v6, v7, v8, v9){
+        alert (lista)
+
+        if(v0 < 0){
+            neg++
+        }
+        else{
+            pos++
+        }
+
+        if(v0 / 2 == 1 || -1){
+            p++
+        }
+        else{
+            i++
+        }
+        
+        if(v1 < 0){
+            neg++
+        }
+        else{
+            pos++
+        }
+
+        if(v2 < 0){
+            neg++
+        }
+        else{
+            pos++
+        }
+        if(v3 < 0){
+            neg++
+        }
+        else{
+            pos++
+        }
+        if(v4 < 0){
+            neg++
+        }
+        else{
+            pos++
+        }
+        if(v5 < 0){
+            neg++
+        }
+        else{
+            pos++
+        }
+        if(v6 < 0){
+            neg++
+        }
+        else{
+            pos++
+        }
+        if(v7 < 0){
+            neg++
+        }
+        else{
+            pos++
+        }
+        if(v8 < 0){
+            neg++
+        }
+        else{
+            pos++
+        }
+        if(v9 < 0){
+            neg++
+        }
+        else{
+            pos++
+        }
+        }
+        else{
+            alert("Erro: Digite os 10 números")
+        }
+
+        
+        
+        alert("Números negativos: " + neg + "\nNúmeros positivos: " + pos + "\nNúmero impares: " + i + "\nNúmero pares: " + p)
+    }
+   </script>
+    
+</body> 
+</html>
