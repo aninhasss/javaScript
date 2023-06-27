@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>questão-2</title>
+    <style>
+        body, #js{
+            background-color: rgb(150, 187, 211);
+            display: grid;
+            place-items: center; 
+        }
+        .tabuada, #js{
+            background-color: white;
+            padding: 2%;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 6.5cm;
+        }
+        .link, a{
+            color: rgb(0, 0, 0);
+            padding: 0.2cm;
+            margin-top: 1cm;
+            text-decoration: none;
+            background-color: white;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="link">
+        <a href="ex1.html">questao-1</a>
+        <a href="ex2.html">questao-2</a>
+        <a href="ex3.html">questao-3</a>
+        <a href="ex4.html">questao-4</a>
+        <a href="ex5.html">questao-5</a>
+        <a href="ex6.html">questao-6</a>
+        <a href="ex7.html">questao-7</a>
+        <a href="ex8.html">questao-8</a>
+        <a href="ex9.html">questao-9</a>
+        <a href="ex10.html">questao-10</a>
+        <a href="ex11.html">questao-11</a>
+        <a href="ex12.html">questao-12</a>
+    </div class="link">
+
+    <div class="tabuada">
+    <h2>Tabuada</h2>
+    <h4>Escolha um número entre 0 e 10</h4>
+    <form>
+        <input id="num" type="number">
+        <button onclick="calcular()">Calcular</button>
+    </form>
+    </div class="tabuada">
+
+    <script>
+    function calcular(){
+    var num = document.getElementById("num").value
+    
+    for(var i=0; i<=10; i++){
+        if (num>=0 && num<=10){
+            alert(num + " X " + i + " = " + (num*i))       
+        }
+    }
+        if (num<0 || num>10){
+            alert("ERRO: Escolha um valor diferente de " + num)
+        }   
+    }
+    
+    </script>
+    
+</body>
+</html>

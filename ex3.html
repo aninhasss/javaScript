@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>questão-3</title>
+    <style>
+        body{
+            background-color: rgb(150, 187, 211);
+            display: grid;
+            place-items: center; 
+        }
+        .result{
+            background-color: white;
+            padding: 2%;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 6.5cm;
+        }
+        .link, a{
+            color: rgb(0, 0, 0);
+            padding: 0.2cm;
+            margin-top: 1cm;
+            text-decoration: none;
+            background-color: white;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="link">
+        <a href="ex1.html">questao-1</a>
+        <a href="ex2.html">questao-2</a>
+        <a href="ex3.html">questao-3</a>
+        <a href="ex4.html">questao-4</a>
+        <a href="ex5.html">questao-5</a>
+        <a href="ex6.html">questao-6</a>
+        <a href="ex7.html">questao-7</a>
+        <a href="ex8.html">questao-8</a>
+        <a href="ex9.html">questao-9</a>
+        <a href="ex10.html">questao-10</a>
+        <a href="ex11.html">questao-11</a>
+        <a href="ex12.html">questao-12</a>
+    </div class="link">
+
+    <div class="result"> 
+    <h2>IMC</h2>
+    <h4>Digite os dados pedidos</h4>
+    <form>
+        <input id="peso" type="text" placeholder="peso(kg)">
+        <input id="altura" type="text" placeholder="altura(m)">
+        <button onclick="clacular()">Calcular</button>
+    </form>
+    </div class="result">
+
+    <script>
+    function calcular(){
+        var peso = document.getElementById("peso").value
+        var alt = document.getElementById("altura").value
+        var imc = (peso/(alt**2))
+        var Pmin = (18.5*(alt**2))
+        var Pmax = (24.9*(alt**2))
+        var Pmed = (Pmin+Pmax)/2
+
+        alert("\nIMC = " + imc + "\n\nPeso Mínimo = " + Pmin + "\n\nPeso Máximo = " + Pmax + "\n\nPeso Médio = " + Pmed)
+        
+        if (imc<18.5){
+            alert("Você está abaixo do peso ideal")
+        }
+        else if (imc>=18.5 && imc<=24.9){
+            alert("Parabéns! Você está em seu peso ideal")
+        }
+        else if (imc>=25 && imc<=29.9){
+            alert("Você está acima de seu peso (sobrepeso)")
+        }
+        else if (imc>=30 && imc<=34.9){
+            alert("Obesidade grau I")
+        }
+        else if (imc>=35 && imc<=39.9){
+            alert("Obesidade garu II")
+        }
+        else if (imc>=40){
+            alert("Obesidade grau III")
+        }
+    }
+    </script>
+    
+</body> 
+</html>

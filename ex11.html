@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>questão-11</title>
+    <style>
+        body{
+            background-color: rgb(150, 187, 211);
+            display: grid;
+            place-items: center; 
+        }
+        .result{
+            background-color: white;
+            padding: 2%;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 6.5cm;
+        }
+        .link, a{
+            color: rgb(0, 0, 0);
+            padding: 0.2cm;
+            margin-top: 1cm;
+            text-decoration: none;
+            background-color: white;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="link">
+        <a href="ex1.html">questao-1</a>
+        <a href="ex2.html">questao-2</a>
+        <a href="ex3.html">questao-3</a>
+        <a href="ex4.html">questao-4</a>
+        <a href="ex5.html">questao-5</a>
+        <a href="ex6.html">questao-6</a>
+        <a href="ex7.html">questao-7</a>
+        <a href="ex8.html">questao-8</a>
+        <a href="ex9.html">questao-9</a>
+        <a href="ex10.html">questao-10</a>
+        <a href="ex11.html">questao-11</a>
+        <a href="ex12.html">questao-12</a>
+    </div class="link">
+
+    <div class="result"> 
+    <h2>Mês</h2>
+    <h4>Digite um número no intervolo de 1 e 12</h4>
+    <form>
+        <input id="num" type="number">
+        <button onclick="enviar()">Enviar</button>
+    </form>
+    </div class="result">
+
+    <script>
+    function enviar(){
+        var num = document.getElementById("num").value
+        var mes = num
+
+        if (num ==1 ) {
+            alert("Número: " + num + "\nMês Referente: Janeiro")
+        }
+        else if (num ==2 ) {
+            alert("Número: " + num + "\nMês Referente: Fevereiro")
+        }
+        else if (num ==3 ) {
+            alert("Número: " + num + "\nMês Referente: Março")
+        }
+        else if (num ==4 ) {
+            alert("Número: " + num + "\nMês Referente: Abril")
+        }
+        else if (num ==5 ) {
+            alert("Número: " + num + "\nMês Referente: Maio")
+        }
+        else if (num ==6 ) {
+            alert("Número: " + num + "\nMês Referente: Junho")
+        }
+        else if (num ==7 ) {
+            alert("Número: " + num + "\nMês Referente: Julho")
+        }
+        else if (num ==8 ) {
+            alert("Número: " + num + "\nMês Referente: Agosto")
+        }
+        else if (num ==9 ) {
+            alert("Número: " + num + "\nMês Referente: Setembro")
+        }
+        else if (num ==10 ) {
+            alert("Número: " + num + "\nMês Referente: Outubro")
+        }
+        else if (num ==11 ) {
+            alert("Número: " + num + "\nMês Referente: Novembro")
+        }
+        else if (num ==12 ) {
+            alert("Número: " + num + "\nMês Referente: Dezembro")
+        }
+        else if (num <=0 || num>=13 ) {
+            alert("Erro: Esse mês não existe")
+        }
+        
+
+
+    }
+    </script>
+    
+</body> 
+</html>

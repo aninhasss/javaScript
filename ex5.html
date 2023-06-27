@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>questão-5</title>
+    <style>
+        body{
+            background-color: rgb(150, 187, 211);
+            display: grid;
+            place-items: center; 
+        }
+        .result{
+            background-color: white;
+            padding: 2%;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 5cm;
+            .espaço{
+                width: 5cm;
+                padding: 0.5cm;
+            }
+            #margem{
+                margin-top: 1cm;
+            }
+        }
+        .link, a{
+            color: rgb(0, 0, 0);
+            padding: 0.2cm;
+            margin-top: 1cm;
+            text-decoration: none;
+            background-color: white;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="link">
+        <a href="ex1.html">questao-1</a>
+        <a href="ex2.html">questao-2</a>
+        <a href="ex3.html">questao-3</a>
+        <a href="ex4.html">questao-4</a>
+        <a href="ex5.html">questao-5</a>
+        <a href="ex6.html">questao-6</a>
+        <a href="ex7.html">questao-7</a>
+        <a href="ex8.html">questao-8</a>
+        <a href="ex9.html">questao-9</a>
+        <a href="ex10.html">questao-10</a>
+        <a href="ex11.html">questao-11</a>
+        <a href="ex12.html">questao-12</a>
+    </div class="link">
+
+    <div class="result"> 
+    <h2>Formulário</h2>
+    <h4>Digite suas informações</h4>
+    <form class="espaço">
+        <label>Nome: </label><input id="nome" type="text">
+        <label>Email: </label><input id="email" type="text">
+        <label>CPF: </label><input id="cpf" type="text">
+        <label>Idade: </label><input id="idade" type="number">
+        <button id="margem" onclick="enviar()">Enviar</button>
+    </form>
+    </div class="result">
+
+    <script>
+    function enviar(){
+        var nome = document.getElementById("nome").value
+        var email = document.getElementById("email").value
+        var cpf = document.getElementById("cpf").value
+        var idade = document.getElementById("idade").value
+
+        alert("Nome: " + nome + "\nEmail: " + email + "\nCPF: " + cpf + "\nIdade: " + idade)
+    }
+    </script>
+    
+</body> 
+</html>
